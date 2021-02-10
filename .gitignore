@@ -1,4 +1,4 @@
-static/imgs/
+static/imgs/*.svg
 .DS_Store
 .idea/
 
