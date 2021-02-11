@@ -43,3 +43,6 @@ class Histogram:
             plot_bgcolor='rgba(0,0,0,0)',
         )
         self.fig.write_image(self.path + name)
+
+    def hist_age_accumulated(self):
+        pass
