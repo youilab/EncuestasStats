@@ -131,3 +131,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+#XML
+.static/surveysFCA/
+.static/surveysHimno/
+.static/surveysTequis/
+

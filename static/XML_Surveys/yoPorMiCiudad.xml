@@ -1,0 +1,300 @@
+<survey version="3">
+    <title>Yo por mi ciudad</title>
+    <description></description>
+    <sections>
+        <section id="1">
+            <title>Selccción Entrevista</title>
+            <note></note>
+            <questions>
+                <question id="1" type="multioption" mandatory="1">
+                    <text>Selecciona la entrevista que deseas aplicar</text>
+                    <options>
+                        <option goto="2:1">Entrevista a Negocios Locales</option>
+                        <option goto="3:1">Entrevista a Padres</option>
+                        <option goto="4:1">Entrevista a Vecinos</option>
+                    </options>
+                </question>
+            </questions>
+        </section>
+        <section id="2">
+            <title>NEGOCIOS LOCALES</title>
+            <note></note>
+            <questions>
+                <question id="1" type="multioption" mandatory="1">
+                    <text>¿Cuál es tu género?</text>
+                    <options>
+                        <option>Masculino</option>
+                        <option>Femenino</option>
+                        <option>Prefiero no decirlo</option>
+                    </options>
+                </question>
+
+                <question id="2" type="numeric" mandatory="1">
+                    <text>¿Qué edad tienes?</text>
+                </question>
+
+                <question id="3" type="short-text" mandatory="1">
+                    <text>¿Cuál es tu profesión?</text>
+                </question>
+
+                <question id="4" type="short-text" mandatory="1">
+                    <text>¿En qué colonia vives?</text>
+                </question>
+
+                <question id="5" type="lickert" mandatory="1">
+                    <text>¿Qué tan seguro te sientes recorriendo las calles y avenidas de la zona?</text>
+                    <low>Muy Inseguro</low><!-- Lowest value label -->
+                    <high>Muy seguro</high><!-- Highest value label -->
+                </question>
+
+                <question id="6" type="long-text" mandatory="1">
+                    <text>¿Qué cambiarías para sentirte más seguro?</text>
+                </question>
+
+                <question id="7" type="lickert" mandatory="1">
+                    <text>¿Qué tanto crees necesario mejorar la infraestructura vial de la zona?</text>
+                    <low>Poco necesario</low><!-- Lowest value label -->
+                    <high>Muy necesario</high><!-- Highest value label -->
+                </question>
+
+
+                <!--Multiple answer-->
+                <question id="8" type="multianswer" mandatory="1">
+                    <text>¿Qué consideras necesario mejorar para que la infraestructura vial sea la adecuada?</text>
+                    <options>
+                        <option>Iluminación</option>
+                        <option>Baches</option>
+                        <option>Banquetas</option>
+                        <option>Áreas verdes</option>
+                        <option>Áreas públicas de esparcimiento y recreación</option>
+                        <option>Pasos de cebra</option>
+                        <option>Rejas de alcantarillado</option>
+                        <option>Pasos a nivel</option>
+                        <option>Áreas de esparcimiento público</option>
+                        <option type="short-text">Otros</option>
+                    </options>
+                </question>
+
+                <question id="9" type="lickert" mandatory="1">
+                    <text>¿Qué tanto tráfico consideras que hay en esta zona?</text>
+                    <low>Poco</low><!-- Lowest value label -->
+                    <high>Mucho</high><!-- Highest value label -->
+                </question>
+
+                <question id="10" type="short-text" mandatory="1">
+                    <text>¿De qué es el negocio?</text>
+                </question>
+
+                <question id="11" type="multioption" mandatory="1">
+                    <text>¿Qué medio usas para llegar al negocio?</text>
+                    <options>
+                        <option>Caminando</option>
+                        <option>Bicicleta</option>
+                        <option>Transporte privado</option>
+                        <option>Transporte público</option>
+                        <option>Vehículo propio</option>
+                    </options>
+                </question>
+
+
+                <question id="12" type="multioption" mandatory="1">
+                    <text>¿Hay estacionamiento suficiente para sus clientes?</text>
+                    <options>
+                        <option>Sí</option>
+                        <option>No</option>
+                    </options>
+                </question>
+
+                <question id="13" type="numeric" mandatory="1">
+                    <text>¿Cuántos?</text>
+                </question>
+
+                <question id="14" type="lickert" mandatory="1">
+                    <text>¿Qué impacto tendría a su negocio la instalación de una ciclo vía en la zona?</text>
+                    <low>Negativo</low><!-- Lowest value label -->
+                    <high>Positivo</high><!-- Highest value label -->
+                </question>
+
+                <question id="15" type="long-text" mandatory="1">
+                    <text>¿Por qué?</text>
+                </question>
+                <question id="16" type="multioption" mandatory="1">
+                    <text>Encuesta Terminada</text>
+                    <options>
+                        <option goto="end">ok</option>
+                    </options>
+                </question>
+            </questions>
+        </section>
+        
+        <section id="3">
+            <title>Entrevista a Padres</title>
+            <questions>
+                <question id="1" type="multioption" mandatory="1">
+                    <text>¿Cuál es tu género?</text>
+                    <options>
+                        <option>Masculino</option>
+                        <option>Femenino</option>
+                        <option>Prefiero no decir</option>
+                    </options>
+                </question>
+                
+                <question id="2" type="numeric" mandatory="1">
+                    <text>¿Qué edad tienes?</text>
+                </question>
+                
+                <question id="3" type="short-text" mandatory="1">
+                    <text>¿Cuál es tu profesión?</text>
+                </question>
+                
+                <question id="4" type="short-text" mandatory="1">
+                    <text>¿En qué colonia vives?</text>
+                </question>
+                
+                <question id="5" type="lickert" mandatory="1">
+                    <text>"¿Qué tan seguro te sientes recorriendo las calles y avenidas de la zona?"</text>
+                    <low>Muy Inseguro</low><!-- Lowest value label -->
+                    <high>Muy seguro</high><!-- Highest value label -->
+                </question>
+                
+                <question id="6" type="long-text" mandatory="1">
+                    <text>¿Qué cambiarias para sentirse más seguro?</text>
+                </question>
+                
+                <question id="7" type="lickert" mandatory="1">
+                    <text>"¿Qué tanto crees necesario mejorar la infraestructura vial de la zona"</text>
+                    <low>Poco necesario</low><!-- Lowest value label -->
+                    <high>Muy necesario</high><!-- Highest value label -->
+                </question>
+                
+                <question id="8" type="multianswer" mandatory="1">
+                    <text>¿Qué consideras necesaro mejorar para que la infrestructura vial sea la adecuada?</text>
+                    <note>Puedes seleccionar una o más opciones.</note>
+                    <options>
+                        <option>Iluminación</option>
+                        <option>Baches</option>
+                        <option>Banquetas</option>
+                        <option>Áreas Verdes</option>
+                        <option>Áreas públicas de esparcimiento y recreación</option>
+                        <option>Pasos de cebra</option>
+                        <option>Rejas de alcantarillado</option>
+                        <option>Pasos a nivel</option>
+                        <option>Áreas de esparcimiento público</option>
+                        <option type="short-text">Otros</option>
+                    </options>
+                </question>
+                
+                <question id="9" type="lickert" mandatory="1">
+                    <text>"¿Qué tanto tráfico consideras que hay en esta zona?"</text>
+                    <low>Poco</low><!-- Lowest value label -->
+                    <high>Mucho</high><!-- Highest value label -->
+                </question>
+                <question id="10" type="multioption" mandatory="1">
+                    <text>¿Considerarías pertinente que sus hijos pudieran llegar caminando a la escuela?</text>
+                    <options>
+                        <option>Si</option>
+                        <option>No</option>
+                    </options>
+                </question>
+                <question id="11" type="long-text" mandatory="1">
+                    <text>¿Por qué?</text>
+                </question>
+                <question id="12" type="long-text" mandatory="1">
+                    <text>¿Qué se necesitaría para que su hijo pueda llegar solo a la escuela?</text>
+                </question>
+                <question id="13" type="numeric" mandatory="1">
+                    <text>¿Cuántos viajes realiza al día?</text>
+                </question>
+                <question id="14" type="multioption" mandatory="1">
+                    <text>Encuesta Terminada</text>
+                    <options>
+                        <option goto="end">ok</option>
+                    </options>
+                </question>
+            </questions>
+        </section>
+        <section id="4">
+            <title>Entrevista a Vecinos</title>
+            <questions>
+                <question id="1" type="multioption" mandatory="1">
+                    <text>¿Cuál es tu género?</text>
+                    <options>
+                        <option>Masculino</option>
+                        <option>Femenino</option>
+                        <option>Prefiero no decir</option>
+                    </options>
+                </question>
+                
+                <question id="2" type="numeric" mandatory="1">
+                    <text>¿Qué edad tienes?</text>
+                </question>
+                
+                <question id="3" type="short-text" mandatory="1">
+                    <text>¿Cuál es tu profesión?</text>
+                </question>
+                
+                <question id="4" type="short-text" mandatory="1">
+                    <text>¿En qué colonia vives?</text>
+                </question>
+                
+                <question id="5" type="lickert" mandatory="1">
+                    <text>"¿Qué tan seguro te sientes recorriendo las calles y avenidas de la zona?"</text>
+                    <low>Muy Inseguro</low><!-- Lowest value label -->
+                    <high>Muy seguro</high><!-- Highest value label -->
+                </question>
+                
+                <question id="6" type="long-text" mandatory="1">
+                    <text>¿Qué cambiarias para sentirse más seguro?</text>
+                </question>
+                
+                <question id="7" type="lickert" mandatory="1">
+                    <text>"¿Qué tanto crees necesario mejorar la infraestructura vial de la zona"</text>
+                    <low>Poco necesario</low><!-- Lowest value label -->
+                    <high>Muy necesario</high><!-- Highest value label -->
+                </question>
+                
+                <question id="8" type="multianswer" mandatory="1">
+                    <text>¿Qué consideras necesaro mejorar para que la infrestructura vial sea la adecuada?</text>
+                    <note>Puedes seleccionar una o más opciones.</note>
+                    <options>
+                        <option>Iluminación</option>
+                        <option>Baches</option>
+                        <option>Banquetas</option>
+                        <option>Áreas Verdes</option>
+                        <option>Áreas públicas de esparcimiento y recreación</option>
+                        <option>Pasos de cebra</option>
+                        <option>Rejas de alcantarillado</option>
+                        <option>Pasos a nivel</option>
+                        <option>Áreas de esparcimiento público</option>
+                        <option type="short-text">Otros</option>
+                    </options>
+                </question>
+                
+                <question id="9" type="lickert" mandatory="1">
+                    <text>"¿Qué tanto tráfico consideras que hay en esta zona?"</text>
+                    <low>Poco</low><!-- Lowest value label -->
+                    <high>Mucho</high><!-- Highest value label -->
+                </question>
+                
+                <question id="10" type="multianswer" mandatory="1">
+                    <text>¿Hay estacionamiento suficiente?</text>
+                    
+                    <options>
+                        <option>Si</option>
+                        <option>No</option>
+                    </options>
+                </question>
+                    
+                <question id="11" type="lickert" mandatory="1">
+                    <text>"¿Cúal sería el impacto de la instalación de una ciclo via enesta zona?"</text>
+                    <low>Negativo</low><!-- Lowest value label -->
+                    <high>Positivo</high><!-- Highest value label -->
+                </question>
+                
+                <question id="12" type="long-text" mandatory="1">
+                    <text>¿Por qué?</text>
+                </question>
+            </questions>
+        </section>
+    </sections>
+</survey>

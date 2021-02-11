@@ -1,0 +1,282 @@
+<survey version="3">
+
+    <title>YoPorMiCiudad</title>
+    <description>Propuesta de encuesta para el evento YoPorMiCiudad</description>
+    <sections>
+
+        <section id="1">
+            <title>Categorización de Encuestados</title>
+            <note></note>
+            <questions>
+
+                <question id="1" type="short-text" mandatory="1">
+                    <text>Edad</text>
+                </question>
+
+                <!-- Yes/No question (mandatory, so people cannot continue until answer) -->
+                <question id="2" type="multioption" mandatory="1">
+                    <text>Selecciona tu género</text>
+                    <options>
+                        <option>Hombre</option>
+                        <option>Mujer</option>
+                        <option>Prefiero no decirlo</option> <!--Tag "end" to finish survey-->
+                    </options>
+                </question>
+
+                <question id="3" type="short-text" mandatory="1">
+                    <text>¿A qué te dedicas??</text>
+                </question>
+            </questions>
+        </section>
+
+        
+        
+        
+        <section id="2">
+            <title>Problemática Ambiental</title>
+             <note></note>
+            <questions>
+
+                <!--Multiple answer-->
+                <question id="1" type="multianswer" mandatory="1">
+                    <text>Pensando en su rutina diaria, ¿Cuál de estos elementos se encuentra con más frecuencia?</text>
+                    <note>La primera opción que selecciones será la más frecuente, la segunda opción seleccionada la siguiente en frecuencia y así consecutivamente</note>
+                    <options>
+                        <option>Tráfico</option>
+                        <option>Inseguridad</option>
+                        <option>Inundaciones</option>
+                        <option>Contaminación</option>
+                    </options>
+                </question>
+
+                <question id="2" type="lickert" mandatory="1">
+                    <text>¿Cuál es el nivel de importancia de la problemática del tráfico?</text>
+                    <note>Donde 0 es 'Nada importante' y 10 'Muy importante'</note>
+                    <low>Nada importante</low><!-- Lowest value label -->
+                    <high>Muy importante</high><!-- Highest value label -->
+                </question>
+
+                <question id="3" type="lickert" mandatory="1">
+                    <text>¿Cuál es el nivel de importancia de la problemática de la inseguridad?</text>
+                    <note>Donde 0 es 'Nada importante' y 10 'Muy importante'</note>
+                    <low>Nada importante</low><!-- Lowest value label -->
+                    <high>Muy importante</high><!-- Highest value label -->
+                </question>
+
+                <question id="4" type="lickert" mandatory="1">
+                    <text>¿Cuál es el nivel de importancia de la problemática de las inundaciones?</text>
+                    <note>Donde 0 es 'Nada importante' y 10 'Muy importante'</note>
+                    <low>Nada importante</low><!-- Lowest value label -->
+                    <high>Muy importante</high><!-- Highest value label -->
+                </question>
+
+                <question id="5" type="lickert" mandatory="1">
+                    <text>¿Cuál es el nivel de importancia de la problemática de la contaminación?</text>
+                    <note>Donde 0 es 'Nada importante' y 10 'Muy importante'</note>
+                    <low>Nada importante</low><!-- Lowest value label -->
+                    <high>Muy importante</high><!-- Highest value label -->
+                </question>
+
+                <!-- Yes/No question (mandatory, so people cannot continue until answer) -->
+                <question id="6" type="multioption" mandatory="1">
+                    <text>En función del elemento que seleccionó del más importante (tráfico, inseguridad, inundaciones, contaminación), ¿Usted se considera responsable de dichas problemáticas?</text>
+                    <options>
+                        <option>Si</option>
+                        <option>No</option>
+                    </options>
+                </question>
+            </questions>
+        </section>
+
+        <section id="3">
+            <title>Propuestas</title>
+             <note></note>
+            <questions>
+
+                <!--Multiple answer-->
+                <question id="1" type="multianswer" mandatory="1">
+                    <text>Desde su perspectiva, ¿cuál cree que es el mayor obstáculo para dar solución a la problemática ambiental?</text>
+                    <note>Puedes seleccionar una o más opciones.</note>
+                    <options>
+                        <option>Falta de recursos económicos</option>
+                        <option>Falta de voluntad política</option>
+                        <option>Falta de paticipación social</option>
+                        <option>Falta de propuestas</option>
+                    </options>
+                </question>
+
+                <!--Multiple answer-->
+                <question id="2" type="multianswer" mandatory="1">
+                    <text>Si usted coordinara una estrategia para resolver el elemento que seleccionó (tráfico, inseguridad, inundaciones, contaminación), ¿A cuáles de estos organismos involucraría? </text>
+                    <note>Puedes seleccionar una o más opciones.</note>
+                    <options>
+                        <option>Academia (Universidades)</option>
+                        <option>Gobierno (Autoridades municipales/estatales)</option>
+                        <option>Sociedad (Ciudadanos)</option>
+                        <option>Industria (Empresas)</option>
+                        <option>Comercio (Negocios)</option>
+                    </options>
+                </question>
+
+                 <!-- Yes/No question (mandatory, so people cannot continue until answer) -->
+                <question id="3" type="multioption" mandatory="1">
+                    <text>¿Ha tenido alguna idea para resolver alguna de las problemáticas mencionadas anteriormente u otra</text>
+                    <options>
+                        <option>Si</option>
+                        <option goto="7">No</option> <!--Tag "end" to finish survey-->
+                    </options>
+                </question>
+
+                <!-- Yes/No question (mandatory, so people cannot continue until answer) -->
+                <question id="4" type="multioption" mandatory="1">
+                    <text>¿Qué problemática?</text>
+                    <options>
+                        <option goto="6">Tráfico</option>
+                        <option goto="6">Inseguridad</option>
+                        <option goto="6">Inundaciones</option>
+                        <option goto="6">Contaminación</option>
+                        <option>Otra</option>
+                    </options>
+                </question>
+
+                <!-- Short open question (not mandatory... so people can press skip button) -->
+                <question id="5" type="short-text" mandatory="1">
+                    <text>Escribe brevemente la problemática sobre la que tienes una idea</text>
+                </question>
+
+                <!-- Long open question (mandatory, so people cannot continue until answer) -->
+                <question id="6" type="long-text" mandatory="1">
+                    <text>Escribe tu idea acerca de la problemática que mencionaste</text>
+                </question>
+
+                <question id="7" type="lickert" mandatory="1">
+                    <text>¿Cuál es el nivel de importancia de que la ciudadanía se junte a firmar peticiones?</text>
+                    <note>Donde 0 es 'Nada importante' y 10 'Muy importante'</note>
+                    <low>Nada importante</low><!-- Lowest value label -->
+                    <high>Muy importante</high><!-- Highest value label -->
+                </question>
+
+                <question id="8" type="lickert" mandatory="1">
+                    <text>¿Cuál es el nivel de importancia de subir impuestos?</text>
+                    <note>Donde 0 es 'Nada importante' y 10 'Muy importante'</note>
+                    <low>Nada importante</low><!-- Lowest value label -->
+                    <high>Muy importante</high><!-- Highest value label -->
+                </question>
+
+                <question id="9" type="lickert" mandatory="1">
+                    <text>¿Cuál es el nivel de importancia de la impartición de talleres del uso de la ciudad?</text>
+                    <note>Donde 0 es 'Nada importante' y 10 'Muy importante'</note>
+                    <low>Nada importante</low><!-- Lowest value label -->
+                    <high>Muy importante</high><!-- Highest value label -->
+                </question>
+
+                <question id="10" type="lickert" mandatory="1">
+                    <text>¿Cuál es el nivel de importancia de que haya más policías?</text>
+                    <note>Donde 0 es 'Nada importante' y 10 'Muy importante'</note>
+                    <low>Nada importante</low><!-- Lowest value label -->
+                    <high>Muy importante</high><!-- Highest value label -->
+                </question>
+
+                <question id="11" type="lickert" mandatory="1">
+                    <text>¿Cuál es el nivel de importancia de que se realicen más actividades recreativas en espacios públicos organizados por colonos o por gobierno?</text>
+                    <note>Donde 0 es 'Nada importante' y 10 'Muy importante'</note>
+                    <low>Nada importante</low><!-- Lowest value label -->
+                    <high>Muy importante</high><!-- Highest value label -->
+                </question>
+
+                <question id="12" type="lickert" mandatory="1">
+                    <text>¿Cuál es el nivel de importancia de los fondos internacionales?</text>
+                    <note>Donde 0 es 'Nada importante' y 10 'Muy importante'</note>
+                    <low>Nada importante</low><!-- Lowest value label -->
+                    <high>Muy importante</high><!-- Highest value label -->
+                </question>
+
+                <question id="13" type="lickert" mandatory="1">
+                    <text>¿Cuál es el nivel de importancia de poner bardas más altas?</text>
+                    <note>Donde 0 es 'Nada importante' y 10 'Muy importante'</note>
+                    <low>Nada importante</low><!-- Lowest value label -->
+                    <high>Muy importante</high><!-- Highest value label -->
+                </question>
+
+                <question id="14" type="lickert" mandatory="1">
+                    <text>¿Cuál es el nivel de importancia de que haya vigilancia pública?</text>
+                    <note>Donde 0 es 'Nada importante' y 10 'Muy importante'</note>
+                    <low>Nada importante</low><!-- Lowest value label -->
+                    <high>Muy importante</high><!-- Highest value label -->
+                </question>
+
+                <question id="15" type="lickert" mandatory="1">
+                    <text>¿Cuál es el nivel de importancia de implementar zonas 30?</text>
+                    <note>Donde 0 es 'Nada importante' y 10 'Muy importante'</note>
+                    <low>Nada importante</low><!-- Lowest value label -->
+                    <high>Muy importante</high><!-- Highest value label -->
+                </question>
+
+                <question id="16" type="lickert" mandatory="1">
+                    <text>¿Cuál es el nivel de importancia de tener vías más rápidas?</text>
+                    <note>Donde 0 es 'Nada importante' y 10 'Muy importante'</note>
+                    <low>Nada importante</low><!-- Lowest value label -->
+                    <high>Muy importante</high><!-- Highest value label -->
+                </question>
+
+                <question id="17" type="lickert" mandatory="1">
+                    <text>¿Cuál es el nivel de importancia de tener un sistema de civlovías?</text>
+                    <note>Donde 0 es 'Nada importante' y 10 'Muy importante'</note>
+                    <low>Nada importante</low><!-- Lowest value label -->
+                    <high>Muy importante</high><!-- Highest value label -->
+                </question>
+
+                <question id="18" type="lickert" mandatory="1">
+                    <text>¿Cuál es el nivel de importancia de tener un bicibus escolar?</text>
+                    <note>Donde 0 es 'Nada importante' y 10 'Muy importante'</note>
+                    <low>Nada importante</low><!-- Lowest value label -->
+                    <high>Muy importante</high><!-- Highest value label -->
+                </question>
+
+                <question id="19" type="lickert" mandatory="1">
+                    <text>¿Cuál es el nivel de importancia de invertir más en infrestructura?</text>
+                    <note>Donde 0 es 'Nada importante' y 10 'Muy importante'</note>
+                    <low>Nada importante</low><!-- Lowest value label -->
+                    <high>Muy importante</high><!-- Highest value label -->
+                </question>
+
+                <question id="20" type="lickert" mandatory="1">
+                    <text>¿Cuál es el nivel de importancia de tener camiones escolares?</text>
+                    <note>Donde 0 es 'Nada importante' y 10 'Muy importante'</note>
+                    <low>Nada importante</low><!-- Lowest value label -->
+                    <high>Muy importante</high><!-- Highest value label -->
+                </question>
+
+                <question id="21" type="lickert" mandatory="1">
+                    <text>¿Cuál es el nivel de importancia de cerrar calles por días?</text>
+                    <note>Donde 0 es 'Nada importante' y 10 'Muy importante'</note>
+                    <low>Nada importante</low><!-- Lowest value label -->
+                    <high>Muy importante</high><!-- Highest value label -->
+                </question>
+
+                <question id="22" type="lickert" mandatory="1">
+                    <text>¿Cuál es el nivel de importancia de implementar 'Hoy no circula'?</text>
+                    <note>Donde 1 es 'Nada importante' y 10 'Muy importante'</note>
+                    <low>Nada importante</low><!-- Lowest value label -->
+                    <high>Muy importante</high><!-- Highest value label -->
+                </question>
+
+                <question id="23" type="lickert" mandatory="1">
+                    <text>¿Cuál es el nivel de importancia de tener vigilantes ciudadanos?</text>
+                    <note>Donde 0 es 'Nada importante' y 10 'Muy importante'</note>
+                    <low>Nada importante</low><!-- Lowest value label -->
+                    <high>Muy importante</high><!-- Highest value label -->
+                </question>
+
+                <!-- Yes/No question (mandatory, so people cannot continue until answer) -->
+                <question id="24" type="multioption" mandatory="1">
+                    <text>¿Le gustaría recibir información sobre la cálidad ambiental (agua, aire, seguridad, tráfico) de San Luis Potosí regularmente?</text>
+                    <options>
+                        <option>Si</option>
+                        <option>No</option>
+                    </options>
+                </question>
+            </questions>
+        </section>
+    </sections>
+</survey>
