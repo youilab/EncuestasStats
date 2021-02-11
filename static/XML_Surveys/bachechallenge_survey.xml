@@ -1,0 +1,230 @@
+﻿<survey version="3">
+
+    <title>SURVEY TITLE</title>
+    <description>The description of the survey</description>
+    <sections>
+
+        <section id="1">
+            <title>Bachechallenge</title>
+            <note>Breve encuesta informativa</note>
+            <questions>
+                <question id="1" type="numeric" mandatory="1">
+                    <note></note>
+                    <text>¿Qué edad tienes?</text>
+                </question>
+                <question id="2" type="multioption" mandatory="1">
+                    <text>¿Cuál es tu género?</text>
+                    <options>
+                        <option>Mujer</option>
+                        <option>Hombre</option>
+                        <option>Prefiero no decirlo</option>
+                    </options>
+                </question>
+                <question id="3" type="long-text" mandatory="1">
+                    <note></note>
+                    <text>¿Cuál es tu profesión?</text>
+                </question>                
+                <question id="4" type="multioption" mandatory="1">
+                    <text>¿Utilizas la bicicleta frecuentemente como medio de transporte?</text>
+                    <options>
+                        <option>Si</option>
+                        <option goto="19">No</option>
+                    </options>
+                </question>
+
+                <!-- Preguntas para los peatones-->
+
+                <question id="5" type="multianswer" mandatory="1">
+                    <text>¿Para qué utilizas la bicicleta?</text>
+                    <note>Puedes seleccionar una o más opciones.</note>
+                    <options>
+                        <option>Transporte</option>
+                        <option>Medio de trabajo</option>
+                        <option>Paseo recreativo</option>
+                        <option>Uso deportivo</option>
+                        <option>Otro</option>
+                   </options>
+                </question>
+                <question id="6" type="lickert" mandatory="1">
+                    <text>¿ Cómo te sientes al  transitar en bicicleta por las calles y avenidas de la ciudad?</text>
+                    <note></note>
+                    <low>Muy inseguro</low><!-- Lowest value label -->
+                    <high>Muy seguro</high><!-- Highest value label -->
+                </question>
+                <question id="7" type="long-text" mandatory="1">
+                    <note>Comenta brevemente.</note>
+                    <text>¿Qué te hacen sentir seguro al transitar en bicicleta por las calles y avenidas de la ciudad?</text>
+                </question>
+                <question id="8" type="long-text" mandatory="1">
+                    <note>Comenta brevemente.</note>
+                    <text>¿Qué te hacen sentir inseguro al transitar en bicicleta por las calles y avenidas de la ciudad?</text>
+                </question>
+                <question id="9" type="lickert" mandatory="1">
+                    <text>Considero necesario mejorar la infrestructura vial de la ciudad para andar en bicicleta</text>
+                    <note></note>
+                    <low>Completamente en desacuerdo</low><!-- Lowest value label -->
+                    <high>Completamente de acuerdo</high><!-- Highest value label -->
+                </question>
+                <question id="10" type="multianswer" mandatory="1">
+                    <text>¿Qué infraestructura vial necesita ser mejorada?</text>
+                    <note>Puedes seleccionar una o más opciones.</note>
+                    <options>
+                        <option>Iluminación</option>
+                        <option>El estado del pavimento de las calles</option>
+                        <option>El estado de las banquetas</option>
+                        <option>Las áreas verdes</option>
+                        <option>Las áreas verdes</option>
+                        <option>Señaletica apropiada</option> 
+                        <option>Alcantarillado</option>                     
+                        <option>Otro</option>
+                   </options>
+                </question>
+                <question id="11" type="long-text" mandatory="1">
+                    <note>Comenta brevemente.</note>
+                    <text>¿Qué hábitos de los conductores consideras son generadores de problemáticas viales?</text>
+                </question> 
+                <question id="12" type="long-text" mandatory="1">
+                    <note>Comenta brevemente.</note>
+                    <text>¿Qué hábitos de los ciclistas consideras son generadores de problemáticas viales?</text>
+                </question>  
+                <question id="13" type="multianswer" mandatory="1">
+                    <text>¿A que hora del dia  transitas en bicicleta ?</text>
+                    <note>Marca todas las que apliquen</note>
+                    <options>
+                        <option>Dia</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </options>
+                </question>
+                <question id="14" type="numeric" mandatory="1">
+                    <note></note>
+                    <text>¿Cuántos viajes en bicicleta realizas al día?</text>
+                </question>
+                <question id="15" type="multioption" mandatory="1">
+                    <text>¿En tu destino encuentras bici-estacionamiento seguro?</text>
+                    <options>
+                        <option>Si</option>
+                        <option>No</option>
+                        <option>No se</option>
+                    </options>
+                </question>
+                <question id="16" type="long-text" mandatory="1">
+                    <note>Comenta brevemente.</note>
+                    <text>¿Qué equipo de protección utilizas  para protejerte al transitar de noche en bicicleta?</text>
+                </question>
+                <question id="17" type="multianswer" mandatory="1">
+                    <text>¿Bajo qué condición dejas de andar en bici?</text>
+                    <note>Puedes seleccionar una o más opciones.</note>
+                    <options>
+                        <option>Condiciones climatológicas adversas</option>
+                        <option>Mala condición del aire (contaminación atmosférica) </option>
+                        <option>Destino a una distancia mayor a 5 km </option>
+                        <option>Destino a una distancia mayor a 10 km </option>
+                        <option>Otras razones</option>
+                   </options>
+                </question> 
+                <question id="18" type="multioption" mandatory="1">
+                    <text>¿Las vias por donde transita en bibicleta cuentan con la señalización adecuada?</text>
+                    <note>Puedes seleccionar una o más opciones.</note>
+                    <options>
+                        <option goto="end">Si</option>
+                        <option goto="end">No</option>
+                        <option goto="end">No se</option>
+                   </options>
+                </question>                     
+
+                <!-- Preguntas para los peatones-->
+
+                <question id="19" type="multianswer" mandatory="1">
+                    <text>¿Con qué finalidad andas a pie en la calle?</text>
+                    <note>Puedes seleccionar una o más opciones.</note>
+                    <options>
+                        <option>Transporte</option>
+                        <option>Trabajo</option>
+                        <option>Paseo recreativo</option>
+                        <option>Uso deportivo</option>
+                        <option>Otro</option>
+                   </options>
+                </question>
+                <question id="20" type="lickert" mandatory="1">
+                    <text>¿Cómo te sientes al  caminar por las calles y avenidas de la ciudad?</text>
+                    <note></note>
+                    <low>Muy inseguro</low><!-- Lowest value label -->
+                    <high>Muy seguro</high><!-- Highest value label -->
+                </question>
+                <question id="21" type="long-text" mandatory="1">
+                    <note>Comenta brevemente.</note>
+                    <text>¿Qué te hacen sentir seguro al caminar por las calles y avenidas de la ciudad?</text>
+                </question>
+                <question id="22" type="long-text" mandatory="1">
+                    <note>Comenta brevemente.</note>
+                    <text>¿Qué te hacen sentir inseguro al camina por las calles y avenidas de la ciudad?</text>
+                </question>
+                <question id="23" type="lickert" mandatory="1">
+                    <text>Considero necesario mejoral la infrestructura vial de la ciudad para los peatones</text>
+                    <note></note>
+                    <low>Completamente en desacuerdo</low><!-- Lowest value label -->
+                    <high>Completamente de acuerdo</high><!-- Highest value label -->
+                </question>
+                <question id="24" type="multianswer" mandatory="1">
+                    <text>¿Qué consideras necesario mejorar para que la infraestructura vial sea la adecuada?</text>
+                    <note>Puedes seleccionar una o más opciones.</note>
+                    <options>
+                        <option>Iluminación</option>
+                        <option>El estado del pavimento de las calles</option>
+                        <option>El estado de las banquetas</option>
+                        <option>Las áreas verdes</option>
+                        <option>Las áreas verdes</option>
+                        <option>Señaletica apropiada</option> 
+                        <option>Alcantarillado</option>                     
+                        <option>Otro</option>
+                   </options>
+                </question>
+                <question id="25" type="long-text" mandatory="1">
+                    <note>Comenta brevemente.</note>
+                    <text>¿Qué hábitos de los conductores de bicicleta consideras son generadores de problemáticas viales?</text>
+                </question> 
+                <question id="26" type="long-text" mandatory="1">
+                    <note>Comenta brevemente.</note>
+                    <text>¿Qué hábitos de los peatones consideras son generadores de problemáticas viales?</text>
+                </question>  
+                <question id="27" type="multianswer" mandatory="1">
+                    <text>¿A que hora del dia caminas por la calle?</text>
+                    <note>Marca todas las que apliquen</note>
+                    <options>
+                        <option>Dia</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </options>
+                </question>
+                <question id="28" type="numeric" mandatory="1">
+                    <note></note>
+                    <text>¿Cuántos viajes a pie realizas al día?</text>
+                </question>
+                <question id="29" type="long-text" mandatory="1">
+                    <note>Comenta brevemente.</note>
+                    <text>¿Qué equipo de protección utilizas  para caminar de noche en la calle?</text>
+                </question>
+                <question id="30" type="multianswer" mandatory="1">
+                    <text>¿Qué infraestructura vial necesita ser mejorada?</text>
+                    <note>Puedes seleccionar una o más opciones.</note>
+                    <options>
+                        <option>Condiciones climatológicas adversas</option>
+                        <option>Mala condición del aire (contaminación atmosférica) </option>
+                        <option>Destino a una distancia mayor a 5 km </option>
+                        <option>Destino a una distancia mayor a 10 km </option>
+                        <option>Otras razones</option>
+                   </options>
+                </question>
+                <question id="31" type="multioption" mandatory="1">
+                    <text> ¿Las vías por donde transita a pie cuentan con la señalización adecuada?</text>
+                    <options>
+                        <option>Si</option>
+                        <option>No</option>
+                        <option>No se</option>
+                    </options>
+                </question>
+            </questions>
+        </section>
+    </sections>
+</survey>

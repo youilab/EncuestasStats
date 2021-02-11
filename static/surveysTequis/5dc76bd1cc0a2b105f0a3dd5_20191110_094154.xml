@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<survey version="2">
+    <topic name="Aceptación de Participación">
+        <question>
+            <text>Cambio de Ruta*</text>
+            <answer>yes</answer>
+            <note></note>
+        </question>
+    </topic>
+    <topic name="Datos demográficos">
+        <question>
+            <text>¿Qué edad tienes?*</text>
+            <answer>57</answer>
+            <note></note>
+        </question>
+        <question>
+            <text>¿Cuál es tu género?*</text>
+            <answer>Hombre</answer>
+            <note></note>
+        </question>
+        <question>
+            <text>¿Cuál es su máximo nivel de estudios?*</text>
+            <answer>Carrera técnica</answer>
+            <note></note>
+        </question>
+        <question>
+            <text>¿Cúal es su ocupación?*</text>
+            <answer>profesor de arte</answer>
+            <note></note>
+        </question>
+        <question>
+            <text>¿En qué localidad vive?*</text>
+            <answer>San Luis Potosí</answer>
+            <note></note>
+        </question>
+        <question>
+            <text>¿En qué colonia vives?*</text>
+            <answer>tequis</answer>
+            <note></note>
+        </question>
+        <question>
+            <text>¿Hace cuantos años que vive en esa colonia?</text>
+            <answer>Sin respuesta</answer>
+            <note></note>
+        </question>
+        <question>
+            <text>¿En qué colonia trabajas?</text>
+            <answer>Sin respuesta</answer>
+            <note></note>
+        </question>
+    </topic>
+    <topic name="Conocimientos de la calidad del aire">
+        <question>
+            <text>¿Cuál de las siguientes opciones están relaciona con la idea de 'calidad del aire'?*</text>
+            <answer>Aire sin contaminación:</answer>
+            <note>Marque una o varias por favor</note>
+        </question>
+        <question>
+            <text>¿Cuáles son las causas de la contaminación del aire en la ciudad de San Luis Potosí?*</text>
+            <answer>Transporte pesado (camiones, trailers, etc.):Automóviles:Transporte público:Actividades en la zona industrial:</answer>
+            <note>Marque una o varias por favor</note>
+        </question>
+        <question>
+            <text>Seleccione aquella o aquellas opciones que considere manifestaciones de la contaminación del aire*</text>
+            <answer>Humo:Gases que salen de coches y camiones:Masas que salen de las fábricas:</answer>
+            <note>Marque una o varias por favor</note>
+        </question>
+        <question>
+            <text>¿Reconoce alguno de los siguientes contaminantes? (Marque uno o varios)*</text>
+            <answer>CO-CO2 (Monóxido - Dióxido de carbono):</answer>
+            <note>Marque una o varias por favor</note>
+        </question>
+    </topic>
+    <topic name="Relevancia de la calidad del aire y sus posibles efectos">
+        <question>
+            <text>¿Qué tan relevante es para usted el tema de la contaminación del aire en su vida cotidiana?*</text>
+            <answer>No se</answer>
+            <note></note>
+        </question>
+        <question>
+            <text>¿Qué tan relevante es para los miembros de su familia el tema de la contaminación del aire?*</text>
+            <answer>Si es relevante</answer>
+            <note></note>
+        </question>
+        <question>
+            <text>¿Qué tan relevante considera que es para la ciudadanía de San Luis Potosí el tema de la contaminación del aire?*</text>
+            <answer>Si es relevante</answer>
+            <note></note>
+        </question>
+        <question>
+            <text>¿Considera que la contaminación del aire lo puede enfermar?*</text>
+            <answer>Sí</answer>
+            <note></note>
+        </question>
+        <question>
+            <text>¿Cuáles de las siguientes enfermedades o padecimientos considera usted que puede ser producidos por la exposición diaria a la contaminación del aire?*</text>
+            <answer>Cáncer de pulmón:ACV (Accidente Cerebrovascular):Ataques al corazón:Neumonia:Asma:Gripe:Bronquitis:Obesidad:Hipertensión:Diabetes:Autismo:</answer>
+            <note>Marque una o varias por favor</note>
+        </question>
+        <question>
+            <text>Marque a continuación si padeció o padece uno o varios de los siguientes síntomas, y que considere son atribuibles a la contaminación de aire del lugar donde vive.*</text>
+            <answer>Dolores de Cabeza:Mareos:Náuseas:</answer>
+            <note>Marque una o varias por favor</note>
+        </question>
+    </topic>
+    <topic name="Percepción de la calidad del aire en su localidad">
+        <question>
+            <text>¿Considera que la calidad del aire en donde vive es buena?*</text>
+            <answer>No</answer>
+            <note></note>
+        </question>
+        <question>
+            <text>¿Considera que la calidad del aire en donde vive le afecta?*</text>
+            <answer>Sí</answer>
+            <note></note>
+        </question>
+        <question>
+            <text>¿Considera que la calidad del aire en San Luis potosí es buena y que no hay contaminación del aire?*</text>
+            <answer>No</answer>
+            <note></note>
+        </question>
+        <question>
+            <text>¿Considera que es muy importante monitorear los contaminantes que están presentes en el aire de la ciudad de San Luis Potosí?*</text>
+            <answer>Sí</answer>
+            <note></note>
+        </question>
+        <question>
+            <text>¿Sabe usted si en la ciudad de San Luis Potosí el aire se monitorea científicamente?*</text>
+            <answer>No</answer>
+            <note></note>
+        </question>
+        <question>
+            <text>¿Conoce usted, si en la colonia o localidad donde vive, existe estación, módulo o unidad de monitoreo de la calidad del aire?</text>
+            <answer>Sin respuesta</answer>
+            <note></note>
+        </question>
+        <question>
+            <text>¿Conoce con qué frecuencia se realiza el monitoreo sobre la calidad del aire en la colonia o localidad donde vive?*</text>
+            <answer>Sin respuesta</answer>
+            <note></note>
+        </question>
+        <question>
+            <text>¿Por qué medio se entera de la calidad del aire en la ciudad?*</text>
+            <answer>Ninguno</answer>
+            <note></note>
+        </question>
+        <question>
+            <text>¿Sabe a qué organismo o dependencia federal, estatal, municipal o particular corresponde el control de la calidad del aire en la colonia o localidad donde vive?*</text>
+            <answer>Dirección de Ecología del Municipio de San Luis Potosí / Soledad</answer>
+            <note></note>
+        </question>
+        <question>
+            <text>¿Recuerda algún evento extraordinario que haya afectado la calidad del aire en la colonia o localidad donde vive?*</text>
+            <answer>Si</answer>
+            <note></note>
+        </question>
+        <question>
+            <text>¿Cuál?</text>
+            <answer>Sin respuesta</answer>
+            <note></note>
+        </question>
+        <question>
+            <text>A nivel personal o familiar, ¿Haría algo para ayudar a evitar la contaminación del aire?*</text>
+            <answer>Si</answer>
+            <note></note>
+        </question>
+        <question>
+            <text>Marque a continuación una o varias acciones que debería tomar el Gobierno Estatal y Municipal para ayudar a disminuir la contaminación del aire.*</text>
+            <answer>Mejorar el transporte público e incentivar su uso:Controles más estrictos a automovilistas, transportistas y camiones:Concientización y campañas informativas sobre cómo mejorar la calidad del aire:Controles más estrictos a industrias sobre emisiones contaminantes:</answer>
+            <note>Marque una o varias por favor</note>
+        </question>
+    </topic>
+</survey>
