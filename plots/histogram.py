@@ -7,7 +7,7 @@ class Histogram:
     def __init__(self, path):
         self.path = path
 
-    def hist_age_percents(self, ages, name, title):
+    def hist_percents(self, ages, name, title):
         edades = [int(x) for x in ages if str(x).isnumeric()]
 
         bin = [x for x in range(0, 61, 5) if x > 1]
@@ -44,7 +44,7 @@ class Histogram:
         )
         fig.write_image(self.path + name)
 
-    def hist_age_accumulated(self, ages, name, title):
+    def hist_percents_accumulated(self, ages, name, title):
         edades = [int(x) for x in ages if str(x).isnumeric()]
 
         bin = [x for x in range(0, 61, 5) if x > 1]
