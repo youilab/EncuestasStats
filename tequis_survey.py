@@ -37,14 +37,16 @@ if __name__ == '__main__':
     """hist.hist_percents(df['Q1'], 'histograma_edades.svg', 'Porcentaje de edades')
     hist.hist_percents_accumulated(df['Q1'], 'histograma_edades_acumuladas.svg', 'Edades acumuladas')"""
 
-    pie = PiePlot('static/imgs/')
+    hist.level_histogram(df['Q5'], 'histograma_trafico.svg', 'Importancia del tráfico')
+
+    """pie = PiePlot('static/imgs/')
 
     question4 = df['Q4']
     total = len(question4)
 
     data = get_q4_data(question4)
 
-    pie.q4_pie(data, 'trafico.svg')
+    pie.q4_pie(data, 'trafico.svg')"""
 
 
 

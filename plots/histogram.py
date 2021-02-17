@@ -6,12 +6,12 @@ class Histogram:
     def __init__(self, path):
         self.path = path
 
-    def _age_histogram_setup(self, fig, bins, percentages, title):
+    def _age_histogram_setup(self, fig, bins, percentages, title, xaxis):
         fig.add_trace(go.Bar(
             x=bins,
             y=percentages,
             name='Age',
-            marker_color='#EB89B5',
+            marker_color='#FD9D24',
             opacity=0.75,
             marker=dict(
                 line=dict(
@@ -25,7 +25,7 @@ class Histogram:
                           textposition='outside')
         fig.update_layout(
             title_text=title,
-            xaxis_title_text='Edades',  # xaxis label
+            xaxis_title_text=xaxis,  # xaxis label
             yaxis_title_text='Porcentaje',  # yaxis label
             paper_bgcolor='rgba(0,0,0,0)',
             plot_bgcolor='rgba(0,0,0,0)',
@@ -46,7 +46,7 @@ class Histogram:
 
         fig = go.Figure()
 
-        fig = self._age_histogram_setup(fig, bins, percentages, title)
+        fig = self._age_histogram_setup(fig, bins, percentages, title, 'Edades')
 
         fig.write_image(self.path + file_name)
 
@@ -67,9 +67,27 @@ class Histogram:
 
         fig = go.Figure()
 
-        fig = self._age_histogram_setup(fig, bins, percentages, title)
+        fig = self._age_histogram_setup(fig, bins, percentages, title, 'Edades')
 
         fig.write_image(self.path + file_name)
 
-    def horizontal_histogram(self, content, file_name, title):
-        pass
+    def level_histogram(self, data, file_name, title):
+        levels = [int(x) for x in data if str(x).isnumeric()]
+
+        counts, bins = np.histogram(levels, bins=range(1, 12))
+
+        percentages = [round(((x / sum(counts)) * 100), 2) for x in counts]
+        #bins = 0.5 * (bins[:-1] + bins[1:])
+
+        fig = go.Figure()
+
+        fig = self._age_histogram_setup(fig, bins, percentages, title, 'Importancia')
+
+        fig.update_layout(
+            xaxis=dict(
+                showticklabels=True,
+                tickmode='linear'
+            )
+        )
+
+        fig.write_image(self.path + file_name)

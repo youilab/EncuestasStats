@@ -7,7 +7,7 @@ class PiePlot:
         self.path = path
 
     def q4_pie(self, data, file_name):
-        colors = ['#EB89B5', 'lightgray']
+        colors = ['#FD9D24', 'lightgray']
         percentages = [round(x[0] / (x[0] + x[1]) * 100, 2) for x in data.values()]
 
         # Create subplots, using 'domain' type for pie charts
