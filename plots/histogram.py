@@ -3,7 +3,6 @@ import numpy as np
 
 
 class Histogram:
-
     def __init__(self, path):
         self.path = path
 
@@ -35,7 +34,7 @@ class Histogram:
 
         return fig
 
-    def hist_percents(self, ages, name, title):
+    def hist_percents(self, ages, file_name, title):
         edades = [int(x) for x in ages if str(x).isnumeric()]
 
         bin = [x for x in range(0, 61, 5) if x > 1]
@@ -49,9 +48,9 @@ class Histogram:
 
         fig = self._age_histogram_setup(fig, bins, percentages, title)
 
-        fig.write_image(self.path + name)
+        fig.write_image(self.path + file_name)
 
-    def hist_percents_accumulated(self, ages, name, title):
+    def hist_percents_accumulated(self, ages, file_name, title):
         edades = [int(x) for x in ages if str(x).isnumeric()]
 
         bin = [x for x in range(0, 61, 5) if x > 1]
@@ -70,5 +69,7 @@ class Histogram:
 
         fig = self._age_histogram_setup(fig, bins, percentages, title)
 
-        fig.write_image(self.path + name)
+        fig.write_image(self.path + file_name)
 
+    def horizontal_histogram(self, content, file_name, title):
+        pass
