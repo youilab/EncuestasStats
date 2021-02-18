@@ -4,8 +4,6 @@ from collections import Counter
 import re
 
 
-
-
 class Pie:
 
     def __init__(self, path):
@@ -22,16 +20,10 @@ class Pie:
         ocupations = ["Licenciado" if re.search("^Lic", x)else x for x in ocupations ]
  
         #ocupations = ["Otro" if re.search("^Sin", x)else x for x in ocupations ]
-
-
-
         
         counts = Counter(ocupations)
-        
 
         self.fig = go.Figure(data=[go.Pie(labels=[*counts.keys()], values=[*counts.values()], hole=.3)])
-
-       
 
         self.fig.update_layout(
             title_text=title,

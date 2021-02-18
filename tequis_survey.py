@@ -33,7 +33,7 @@ if __name__ == '__main__':
                           'Nivel de importancia de invertir más en infrestructura.',
                           'Nivel de importancia de tener camiones escolares.',
                           'Nivel de importancia de cerrar calles por días.',
-                          "Nivel de importancia de implementar 'Hoy no circula'."
+                          "Nivel de importancia de implementar 'Hoy no circula'.",
                           'Nivel de importancia de tener vigilantes ciudadanos.'
                           ]
 
@@ -42,7 +42,6 @@ if __name__ == '__main__':
 
     for index, q in enumerate(zip(categorical_questions, categorical_titles)):
         hist.level_histogram(df[q[0]], q[0] + '.svg', q[1])
-
 
     pie = PiePlot('static/imgs/')
 
