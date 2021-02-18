@@ -77,7 +77,6 @@ class Histogram:
         counts, bins = np.histogram(levels, bins=range(1, 12))
 
         percentages = [round(((x / sum(counts)) * 100), 2) for x in counts]
-        #bins = 0.5 * (bins[:-1] + bins[1:])
 
         fig = go.Figure()
 
