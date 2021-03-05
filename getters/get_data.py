@@ -78,3 +78,53 @@ def get_q11_data(q11):
     }
 
     return data
+
+
+def get_Q9_FCA_data(q9):
+    total = len(q9)
+    iluminacion = 0
+    baches = 0
+    banquetas = 0
+    areas_verdes = 0
+    areas_publicas = 0
+    pasos_de_cebra = 0
+    alcantarillas = 0
+    paso_a_nivel = 0
+    esparcimiento = 0
+    otros = 0
+    for i in q9:
+        if 'Iluminación' in i:
+            iluminacion += 1
+        if 'Baches' in i:
+            baches += 1
+        if 'Banquetas' in i:
+            banquetas += 1
+        if 'verdes' in i:
+            areas_verdes += 1
+        if 'recreacion' in i:
+            areas_publicas += 1
+        if 'cebra' in i:
+            pasos_de_cebra += 1
+        if 'Rejas' in i:
+            alcantarillas += 1
+        if 'nivel' in i:
+            paso_a_nivel += 1
+        if 'público' in i:
+            esparcimiento += 1
+        if 'Otros' in i:
+            otros += 1
+
+    data = {
+        'iluminacion': [iluminacion, total - iluminacion],
+        'baches': [baches, total - baches],
+        'banquetas': [banquetas, total - banquetas],
+        'areas_verdes': [areas_verdes, total - areas_verdes],
+        'areas_publicas': [areas_publicas, total - areas_publicas],
+        'pasos_de_cebra': [pasos_de_cebra, total - pasos_de_cebra],
+        'alcantarillas': [alcantarillas, total - alcantarillas],
+        'paso_a_nivel': [paso_a_nivel, total - paso_a_nivel],
+        'esparcimiento': [esparcimiento, total - esparcimiento],
+        'otros': [otros, total - otros],
+    }
+
+    return data

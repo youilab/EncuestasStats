@@ -90,3 +90,48 @@ class Histogram:
         )
 
         fig.write_image(self.path + file_name)
+
+    def hist_q12_fca(self, data):
+
+        count = {
+            'Caminando': 0,
+            'Bicicleta': 0,
+            'Transporte privado': 0,
+            'Transporte público': 0,
+            'Vehículo propio': 0,
+        }
+
+        for i in data:
+            count[i] += 1
+
+        y = [(count[i]/len(data))*100 for i in count]
+        x = [i for i in count]
+
+        fig = go.Figure()
+
+        fig.add_trace(go.Bar(
+            x=y,
+            y=x,
+            opacity=0.75,
+            marker=dict(
+                color='#FD9D24',
+                line=dict(
+                    color='black',
+                    width=1
+                ),
+            ),
+            orientation='h',
+        ))
+
+        fig.update_traces(texttemplate=[str(x) + '%' if x > 0 else '' for x in y], textposition='inside')
+        fig.update_layout(
+            title_text='¿Qué medio usas para llegar al negocio?',
+            # xaxis_title_text=xaxis,  # xaxis label
+            xaxis_title_text='Porcentaje',  # yaxis label
+            paper_bgcolor='rgba(0,0,0,0)',
+            plot_bgcolor='rgba(0,0,0,0)',
+            bargap=0.2,
+        )
+
+        fig.write_image(self.path + 'Q12_FCA.svg')
+
