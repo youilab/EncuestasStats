@@ -1,31 +1,33 @@
-import pandas as pd
+import copy
 
 
 def get_sensors_info(df):
     polls = ['pm25', 'pm1', 'no2', 'voc', 'pm10']
 
-    sensors_info = {}
+    measures = {
+        'std_dev': [],
+        'mean': [],
+        'variance': [],
+    }
+
+    sensors_info = {
+        'sensors': [],
+        'total_masurements': [],
+        'pollutants': {
+            'pm25': copy.deepcopy(measures),
+            'pm1': copy.deepcopy(measures),
+            'no2': copy.deepcopy(measures),
+            'voc': copy.deepcopy(measures),
+            'pm10': copy.deepcopy(measures),
+        },
+    }
 
     for i in df['sensor'].unique():
-        sensors_info[str(i)] = {
-            'pollutants': {},
-            'total_measurements': len(df[df['sensor'] == i]),
-        }
+        sensors_info['sensors'].append(str(i))
+        sensors_info['total_masurements'].append(len(df[df['sensor'] == i]))
         for _ in polls:
-            measures = {
-                'std_dev': round(df[df['sensor'] == i][_].std(), 2),
-                'mean': round(df[df['sensor'] == i][_].mean(), 2),
-                'variance': round(df[df['sensor'] == i][_].var(), 2),
-            }
-            sensors_info[str(i)]['pollutants'][_] = measures
+            sensors_info['pollutants'][_]['std_dev'].append(round(df[df['sensor'] == i][_].std(), 2))
+            sensors_info['pollutants'][_]['mean'].append(round(df[df['sensor'] == i][_].mean(), 2))
+            sensors_info['pollutants'][_]['variance'].append(round(df[df['sensor'] == i][_].var(), 2))
 
     return sensors_info
-
-
-if __name__ == '__main__':
-    df = pd.read_csv('plumelabs_pollutants.csv')
-
-    data = get_sensors_info(df)
-
-    print(data)
-

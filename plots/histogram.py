@@ -21,7 +21,7 @@ class Histogram:
             ),
         ))
 
-        fig.update_traces(texttemplate=[str(x) + '%' if x > 0 else '' for x in percentages],
+        fig.update_traces(texttemplate=[str(x) + '' if x > 0 else '' for x in percentages],
                           textposition='outside')
         fig.update_layout(
             title_text=title,
@@ -135,3 +135,62 @@ class Histogram:
 
         fig.write_image(self.path + 'Q12_FCA.svg')
 
+    def hist_pollutants(self, x, y, pollutant, file_name, title):
+
+        fig = go.Figure()
+
+        fig.add_trace(go.Bar(
+            x=x,
+            y=y,
+            name=pollutant,
+            marker_color='#FD9D24',
+            opacity=0.75,
+            marker=dict(
+                line=dict(
+                    color='black',
+                    width=1
+                )
+            ),
+        ))
+
+        fig.update_traces(texttemplate=[x for x in y],
+                          textposition='outside')
+        fig.update_layout(
+            title_text=title + pollutant.upper(),
+            xaxis_title_text='Flows',  # xaxis label
+            yaxis_title_text='',  # yaxis label
+            paper_bgcolor='rgba(0,0,0,0)',
+            plot_bgcolor='rgba(0,0,0,0)',
+            bargap=0.2,
+        )
+
+        fig.write_image(self.path + file_name + "_" + pollutant + ".svg")
+
+    def hist_total_pollutants(self, x, y, file_name, title):
+        fig = go.Figure()
+
+        fig.add_trace(go.Bar(
+            x=x,
+            y=y,
+            marker_color='#FD9D24',
+            opacity=0.75,
+            marker=dict(
+                line=dict(
+                    color='black',
+                    width=1
+                )
+            ),
+        ))
+
+        fig.update_traces(texttemplate=[x for x in y],
+                          textposition='outside')
+        fig.update_layout(
+            title_text=title,
+            xaxis_title_text='Flows',  # xaxis label
+            yaxis_title_text='',  # yaxis label
+            paper_bgcolor='rgba(0,0,0,0)',
+            plot_bgcolor='rgba(0,0,0,0)',
+            bargap=0.2,
+        )
+
+        fig.write_image(self.path + file_name + ".svg")
